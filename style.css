@@ -1,0 +1,161 @@
+CSS
+
+/* বেসিক স্টাইল */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* হেডার স্টাইল */
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex; /* Flexbox ব্যবহার করছি */
+    justify-content: space-between; /* লোগো বামে, মেনু ডানে */
+    align-items: center; /* উল্লম্বভাবে মাঝখানে */
+    padding: 0 20px;
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    display: flex; /* মেনু আইটেম পাশাপাশি */
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a:hover {
+    color: #ff9900; /* হোভার ইফেক্ট */
+}
+
+/* হিরো সেকশন স্টাইল */
+.hero-section {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .call-to-action {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .call-to-action:hover {
+    background-color: #cc7a00;
+}
+
+/* ফিচার সেকশন স্টাইল */
+.features-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-container {
+    display: flex; /* Flexbox ব্যবহার করছি */
+    justify-content: space-around; /* আইটেমগুলোর মাঝে সমান দূরত্ব */
+    flex-wrap: wrap; /* ছোট স্ক্রিনে আইটেমগুলো নিচে চলে আসবে */
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1; /* Flex item */
+    min-width: 280px; /* আইটেমের সর্বনিম্ন প্রস্থ */
+    max-width: 32%; /* আইটেমের সর্বোচ্চ প্রস্থ */
+}
+
+.feature-item h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* ফুটার স্টাইল */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* ============================================== */
+/* === রেসপনসিভ ডিজাইন (ছোট স্ক্রিনের জন্য) === */
+/* ============================================== */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* হেডার আইটেম উপর-নিচে */
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* মেনু আইটেম উপর-নিচে */
+        width: 100%;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-section {
+        padding: 2rem 1rem;
+    }
+
+    .feature-container {
+        flex-direction: column; /* ফিচার আইটেম উপর-নিচে */
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%; /* মোবাইলে আইটেমের প্রস্থ 90% */
+    }
+}

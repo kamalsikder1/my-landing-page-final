@@ -1,0 +1,113 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার ল্যান্ডিং পেজ</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body><div id="loading-screen">
+    <div class="spinner"></div>
+    <p>লোড হচ্ছে...</p>
+</div>
+
+    <header class="main-header">
+        <div class="logo">আমার লোগো</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#features">বৈশিষ্ট্য</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>আপনার ব্যবসার সেরা সমাধান</h1>
+        <p>আমরা আপনাকে সেরা ডিজিটাল পরিষেবা প্রদান করি।</p>
+        <button class="call-to-action">আরও জানুন</button>
+    </section><section id="hidden-info-section" style="display: none; padding: 2rem; background-color: #e9ecef; text-align: center;">
+    <h2>আমাদের সম্পর্কে আরও জানুন</h2>
+    <p>আমরা বহু বছর ধরে ডিজিটাল পরিষেবা শিল্পে কাজ করছি এবং আমাদের ক্লায়েন্টদের জন্য সেরা ফলাফল নিয়ে আসতে প্রতিশ্রুতিবদ্ধ। আমাদের দল উদ্ভাবনী সমাধান এবং ব্যতিক্রমী গ্রাহক সহায়তার উপর দৃষ্টি নিবদ্ধ করে।</p>
+    <p>আমরা আপনার ব্যবসার লক্ষ্য অর্জনে সহায়তা করতে এখানে আছি।</p>
+</section>
+
+    <section class="features-section">
+        <h2>আমাদের বৈশিষ্ট্যসমূহ</h2>
+        <div class="feature-container">
+            <div class="feature-item">
+                <h3>দ্রুত ডেলিভারি</h3>
+                <p>আমরা দ্রুততম সময়ে আপনার কাজ শেষ করি।</p>
+            </div>
+            <div class="feature-item">
+                <h3>উচ্চ মান</h3>
+                <p>গুণগত মান আমাদের প্রথম অগ্রাধিকার।</p>
+            </div>
+            <div class="feature-item">
+                <h3>সাপোর্ট</h3>
+                <p>২৪/৭ গ্রাহক সহায়তা উপলব্ধ।</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; ২০২৪ আমার ল্যান্ডিং পেজ। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>HTML
+
+<script>
+    // 1. "আরও জানুন" বাটনটি খুঁজে বের করছি
+    const learnMoreBtn = document.querySelector('.call-to-action');
+
+    // 2. লুকানো সেকশনটি খুঁজে বের করছি
+    const hiddenSection = document.getElementById('hidden-info-section');
+
+    // 3. বাটনে ক্লিক করলে কী হবে, সেটা জাভাস্ক্রিপ্টকে বলছি
+    learnMoreBtn.addEventListener('click', function() {
+        if (hiddenSection.style.display === 'none') {
+            hiddenSection.style.display = 'block'; // যদি লুকানো থাকে, তাহলে দেখাও
+            learnMoreBtn.textContent = 'কম জানুন'; // বাটনের লেখা পরিবর্তন করো
+        } else {
+            hiddenSection.style.display = 'none'; // যদি দেখানো থাকে, তাহলে লুকাও
+            learnMoreBtn.textContent = 'আরও জানুন'; // বাটনের লেখা পরিবর্তন করো
+        }
+    });
+</script><script>
+    // যখন পুরো ওয়েবসাইট লোড হয়ে যাবে, তখন এই ফাংশনটি কাজ করবে
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none'; // লোডিং স্ক্রিনটিকে লুকিয়ে দাও
+    });
+</script>HTML
+
+    </footer>
+
+    <script>
+        // "আরও জানুন" বাটনের জাভাস্ক্রিপ্ট কোড (আগের কোড)
+        const learnMoreBtn = document.querySelector('.call-to-action');
+        const hiddenSection = document.getElementById('hidden-info-section');
+
+        learnMoreBtn.addEventListener('click', function() {
+            if (hiddenSection.style.display === 'none') {
+                hiddenSection.style.display = 'block';
+                learnMoreBtn.textContent = 'কম জানুন';
+            } else {
+                hiddenSection.style.display = 'none';
+                learnMoreBtn.textContent = 'আরও জানুন';
+            }
+        });
+    </script>
+
+    <script>
+        // লোডিং স্ক্রিনের জাভাস্ক্রিপ্ট কোড (নতুন কোড)
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'none'; // লোড হয়ে গেলে হাইড করো
+        });
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

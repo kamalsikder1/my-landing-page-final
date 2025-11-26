@@ -5,7 +5,40 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার ল্যান্ডিং পেজ</title>
+    <title>আমার ল্যান্ডিং পেজ</title>S
+
+    /* -------------------------------------- */
+    /* মোবাইল রেসপনসিভনেস (ছোট স্ক্রিনের জন্য) */
+    /* -------------------------------------- */
+    @media (max-width: 768px) {
+        .main-header {
+            flex-direction: column; /* হেডারকে উল্লম্বভাবে সাজান */
+            padding: 1rem;
+        }
+
+        .main-nav ul {
+            flex-direction: column; /* মেনু আইটেমকে উল্লম্বভাবে সাজান */
+            align-items: center;
+            padding: 0;
+        }
+
+        .main-nav li {
+            margin: 0.5rem 0; /* মেনু আইটেমের মধ্যে ব্যবধান বাড়ান */
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem; /* হিরো সেকশনের হেডারের ফন্ট ছোট করুন */
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+        }
+
+        .call-to-action {
+            font-size: 1rem;
+            padding: 0.8rem 1.6rem;
+        }
+    }
     <style>
 
         CSS
@@ -231,4 +264,5 @@ a {
     </script>
 </body>
 </html>
+
 
